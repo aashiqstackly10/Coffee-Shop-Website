@@ -1,0 +1,227 @@
+.home {
+  padding-bottom: 100px;
+}
+
+/* ---------- Header ---------- */
+.home-header {
+  background: linear-gradient(180deg, #131313 0%, #313131 100%);
+  padding: 56px 24px 90px;
+  color: #fff;
+}
+
+.location-label {
+  font-size: 12px;
+  color: #b7b7b7;
+  margin-bottom: 6px;
+}
+
+.location-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #dedede;
+}
+
+.search-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.search-box {
+  flex: 1;
+  height: 52px;
+  background: #313131;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  color: #fff;
+}
+
+.search-box input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.search-box input::placeholder {
+  color: #989898;
+}
+
+.filter-btn {
+  width: 52px;
+  height: 52px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Promo banner ---------- */
+.promo {
+  margin: -62px 24px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.promo img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* ---------- Category chips ---------- */
+.chips {
+  display: flex;
+  gap: 16px;
+  padding: 24px 24px 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.chips::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  flex-shrink: 0;
+  padding: 10px 16px;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--dark);
+}
+
+.chip.active {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ---------- Coffee grid + card ---------- */
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px 24px;
+}
+
+.coffee-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 8px 8px 12px;
+  cursor: pointer;
+}
+
+.card-img-wrap {
+  position: relative;
+  height: 132px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 5px 8px;
+  border-radius: 0 0 0 12px;
+}
+
+.card-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 12px 4px 4px;
+}
+
+.card-type {
+  font-size: 12px;
+  color: var(--grey);
+  margin: 0 4px 12px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4px;
+}
+
+.card-price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-add {
+  width: 32px;
+  height: 32px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Bottom navigation ---------- */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  height: 84px;
+  background: #fff;
+  border-radius: 24px 24px 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.nav-item {
+  position: relative;
+  color: #8d8d8d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 14px;
+}
+
+.nav-item.active {
+  color: var(--primary);
+}
+
+.nav-dot {
+  position: absolute;
+  bottom: -4px;
+  width: 10px;
+  height: 5px;
+  background: var(--primary);
+  border-radius: 10px;
+}

@@ -1,0 +1,193 @@
+.delivery {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+/* ---------- Map ---------- */
+.map {
+  position: relative;
+  flex: 1;
+  background-color: #ececec;
+  background-size: cover;
+  background-position: center;
+}
+
+.map-btn {
+  position: absolute;
+  top: 56px;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.map-btn.left {
+  left: 24px;
+}
+
+.map-btn.right {
+  right: 24px;
+}
+
+.route {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marker.pin {
+  left: 22%;
+  top: 48%;
+}
+
+.marker.scooter {
+  left: 65%;
+  top: 62%;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Bottom sheet ---------- */
+.sheet {
+  background: #fff;
+  border-radius: 24px 24px 0 0;
+  margin-top: -24px;
+  padding: 12px 24px 32px;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.sheet-handle {
+  width: 40px;
+  height: 4px;
+  background: #e3e3e3;
+  border-radius: 10px;
+  margin: 0 auto 16px;
+}
+
+.sheet h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sheet-sub {
+  text-align: center;
+  font-size: 12px;
+  color: var(--grey);
+  margin: 8px 0 20px;
+}
+
+.sheet-sub strong {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.progress {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.progress span {
+  flex: 1;
+  height: 4px;
+  border-radius: 10px;
+  background: #e3e3e3;
+}
+
+.progress span.done {
+  background: var(--green);
+}
+
+.status-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.status-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-card h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.status-card p {
+  font-size: 12px;
+  color: var(--grey);
+  line-height: 1.5;
+}
+
+/* ---------- Courier ---------- */
+.courier {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.courier img {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.courier-info {
+  flex: 1;
+}
+
+.courier-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.courier-info p {
+  font-size: 12px;
+  color: var(--grey);
+  margin-top: 4px;
+}
+
+.call-btn {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
